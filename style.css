@@ -1,0 +1,26 @@
+a{
+    width:200px;
+    padding:10px 12px;
+    background-color: black;
+    color:white;
+    text-decoration: none;
+
+}
+a:link{
+    color:white
+}
+
+a:visited{
+    color:red
+}
+table{
+    width:360px;
+}
+th,td{
+    border:1px solid gray;
+    padding:8px;
+    text-align: center;
+}
+table{
+    border-collapse: collapse;
+}
