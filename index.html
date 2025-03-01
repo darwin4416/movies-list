@@ -3,42 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Action Movies</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Google reCAPTCHA Example</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
-    <h1>Movies List</h1>
-    <div>
-        <a href="./index.html">Action</a>
-        <a href="./horror.html">Horror</a>
-        <a href="./romance.html">Romance</a>
-        <a href="./adventure.html">Adventure</a>
-        <a href="./comedy.html">Comedy</a>
-    </div>
-    <h3>Genre: Action</h3>
-    <table>
-        <thead>
-            <th>Sl No.</th>
-            <th>Name</th>
-            <th>Actor</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1.</td>
-                <td>300</td>
-                <td>Gerrad Buttler</td>
-            </tr>
-            <tr>
-                <td>1.</td>
-                <td>300</td>
-                <td>Gerrad Buttler</td>
-            </tr>
-            <tr>
-                <td>1.</td>
-                <td>300</td>
-                <td>Gerrad Buttler</td>
-            </tr>
-        </tbody>
-    </table>
+
+    <form action="verify.php" method="POST">
+        <label for="email">Email:</label>
+        <input type="email" name="email" required>
+
+        <!-- Google reCAPTCHA -->
+        <div class="g-recaptcha" data-sitekey="6LcXX-YqAAAAAKkUaCKytRCFSL4uYW9RINoLr19t"></div>
+
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
 </body>
 </html>
